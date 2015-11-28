@@ -10,7 +10,7 @@ MAIN<-function()
 {
   betnumber<-1
   last<-c(1,1)
-  last<-getbet(last)
+  last<-get_bet(last)
   numcard=sum(pcards)
   cards<-as.vector(sample(x,numcard,replace=FALSE))
   
@@ -42,7 +42,7 @@ MAIN<-function()
     }
     if (action==2)
     {
-      if (currentplayer==1) {last<-getbet(last)}
+      if (currentplayer==1) {last<-get_bet(last)}
       else last<-INTELLIGENCE(last)
     }
   }
