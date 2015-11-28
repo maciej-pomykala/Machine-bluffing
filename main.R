@@ -30,6 +30,7 @@ ishigher <- function(type, value, last)
   ret=0
   correct=1
   if(type<1 || type>7) {correct=0}
+  if(min(value)<2 || max(value)>14) {correct=0}
   
   higher=0
   if(type>last[1]) {higher=1}

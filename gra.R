@@ -45,8 +45,6 @@ MAIN<-function()
       if (currentplayer==1) {last<-getbet(last)}
       else last<-INTELLIGENCE(last)
     }
-    
-    cat(pcards)
   }
   if(max(pcards)==4) {break}
 }
